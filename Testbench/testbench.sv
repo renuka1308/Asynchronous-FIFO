@@ -4,8 +4,7 @@ module async_fifo_tb;
 
   parameter DSIZE = 8;  // Data width (number of bits per data word)
   parameter ASIZE = 4;  // Address width (number of bits for addressing)
-
-  // Signals
+  
   reg [DSIZE-1:0] wdata; // Data to be written
   reg winc, wclk, wrst_n; // Write increment signal, write clock, active-low reset
   reg rinc, rclk, rrst_n; // Read increment signal, read clock, active-low reset
